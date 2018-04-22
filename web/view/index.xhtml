@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:outputLabel value="Hello, world"/>
+</f:view>
+
+<h:form>
+    <h:outputLabel for="StudentID">
+        <h:outputText value="Student ID :"></h:outputText>
+        <h:inputText id="StudentID" value="#{STcontrol.st.studentID}"></h:inputText>
+    </h:outputLabel>
+
+    <h:outputLabel for="StudentName">
+        <h:outputText value="Student Name: "></h:outputText>
+        <h:inputText id="StudentName" value="#{STcontrol.st.studentName}"></h:inputText>
+    </h:outputLabel>
+
+    <h:outputLabel for="TeacherID">
+        <h:outputText value="Teacher ID :"></h:outputText>
+        <h:inputText id="TeacherID" value="#{STcontrol.tc.teacherID}"></h:inputText>
+    </h:outputLabel>
+
+    <h:outputLabel for="TeacherName">
+        <h:outputText value="Teacher Name: "></h:outputText>
+        <h:inputText id="TeacherName" value="#{STcontrol.tc.teacherName}"></h:inputText>
+    </h:outputLabel>
+
+    <h:commandButton value="ADD" action="#{STcontrol.isNextPage}"></h:commandButton>
+</h:form>
+</html>
